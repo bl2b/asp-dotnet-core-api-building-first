@@ -1,0 +1,18 @@
+2018-09-04 14:18:28.2501|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-09-04 14:18:29.1412|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2018-09-04 14:18:29.3283|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 206.4525ms 404 text/plain
+2018-09-04 14:18:29.3517|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/favicon.ico  
+2018-09-04 14:18:29.3796|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.4351ms 404 text/plain
+2018-09-04 14:23:07.2826|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
